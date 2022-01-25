@@ -9,7 +9,7 @@ You can view the individual plays in the tab called Kickstarter. The outcomes ha
 The excel sheet can be found [here](data-1-1-3-StarterBook.xlsx). 
 
 ## Are Theaterical Kickstarters Successful?
-![Kickstarter Projects by Parent Category](Parent Category Outcomes.png)
+![Parent Category Outcomes.png](Parent Category Outcomes.png)
 We see that theater projects are the most common kickstarter project, with slightly more than half being successful.
 
 ## Are Plays Specific Kickstarter Campaigns Successful?
