@@ -22,7 +22,7 @@ The most successful month of the year is May, but as summer continues, the odds 
 
 ## Impact of Goal Amount On Campaign Success
 ![Statistics of Successful and Failed Kickstarter Plays](stats.png)
----
+
 Your goal of $10,000 is a concern. $10,000 was roughly the average value of kickstarter campaigns that failed. Sucessful campaigns are $5,000 or less.
 
 ## Great Britian Musicals
