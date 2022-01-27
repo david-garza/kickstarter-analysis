@@ -1,42 +1,53 @@
-# An Analysis of Kickstarter Campaigns
-Louise, I have performed an analysis Kickstarter campaigns that should provide insights for your Fever Kickstarter campaign. The analysis is based on a goal of $10,000.
+# Kickstarting with Excel
 
-## Kickstarter Data
-Of 4,115 Kickstarter campaigns, 1,047 are Kickstarters for plays. Of those, 694 were successful in meeting their goals.
+## Overview of Project
+This project continues the analysis after Louise's play *Fever* failed to meet its goal on Kickstarter. She has asked how launch dates and / or funding goals impacted the success of other Kickstarter campaigns.
 
-You can view the individual plays in the tab called Kickstarter. The outcomes have been color coded to make it easier to identify successful plays.
+### Purpose
+This analysis attempts to answer Louise's additional questions and to continue demonstrating skills in excel.
 
-The excel sheet can be found [here](data-1-1-3-StarterBook.xlsx). 
+## Analysis and Challenges
 
-## Are Theaterical Kickstarters Successful?
-![Parent Category Outcomes.png](Parent_Category_Outcomes.png)
+### Analysis of Outcomes Based on Launch Date
+Out of 4,114 Kickstarter campaigns, 1,369 **completed** theater campaigns were analysised by month created. The data was aggregated using a pivot table to filter by parent category and year. 
 
-We see that theater projects are the most common kickstarter project, with slightly more than half being successful.
+Campaign outcome defined the columns and values resulting in a count of successful, failed, and canceled campaigns for each month over several years.
 
-## Are Plays Specific Kickstarter Campaigns Successful?
-![Kickstarter Projects by Subcategory](Subcategory_Outcomes.png)
+The plot of Theater Outcomes Based on Launch Date is provided below:
 
-Plays are the most common Kickstarter campaign by far and they tend to be successful!
+![Outcomes Based on Launch Date](/resources/Theater_Outcomes_vs_Launch.png)
 
-## When is the Best Time to start a Kickstarter Campaign for Plays?
-![Outcomes Based on Launch Date](Outcomes_Based_on_Launch_Date.png)
+### Analysis of Outcomes Based on Goals
+Using countifs(), the campaigns were parsed into $5,000 bin sizes and further parsed and counted by successful, failed, or canceled.
 
-The most successful month of the year is May, but as summer continues, the odds of success get worst.
+The counts of successful, failed, and canceled were then used to compute the percentage of successful, failed, and canceled used the total count within each $5,000 bin.
 
-## Impact of Goal Amount On Campaign Success
-![Statistics of Successful and Failed Kickstarter Plays](stats.png)
+A line chart was then created using the percentages with $5,000 bins along the x-axis.
 
-Your goal of $10,000 is a concern. $10,000 was roughly the average value of kickstarter campaigns that failed. Sucessful campaigns are $5,000 or less.
+The plot of Outcomes vs Goals is provided below:
 
-## Great Britian Musicals
-![GB Goal vs Pledged Boxplot](GB_Musicals_Boxplot.png)
+![Outcomes vs Goals](/resources/Outcomes_vs_Goals.png)
 
-This boxplot shows the goal amounts vs the pledged amounts for musicals in Great Britian. The average goal was 4,000 pounds while 50% of campaigns were greater than 2,000 pounds. The average is above the most pledge amounts and the 2,000 pounds is above 50% of the pledged values. This suggest that people are too ambitous with their kickstarter goals for musicals.
+### Challenges and Difficulties Encountered
+A challenge was encountered with COUNTIFS(). Most of the goal bins require an AND condition to test between to values. COUNTIFS() does not accept the excel function AND() in its criteria arguement. The only way to add boolen AND is to add the tested array again and second criteria test. This was not obvious and allows more more bugs to enter the code.
 
-## Recommendations
-The kickstarter data suggest the following to maximize success:
-*Reduce your goal to $5,000 or less
-*Start your campagin in May
-*Plays are tend to be sucessful and popular on Kickstarter
+## Results
 
-I wish you the best of luck for your campaign!
+- What are two conclusions you can draw about the Outcomes based on Launch Date?
+1. The best month for success is May followed by June, July, and August.
+2. The worst month to start a campaign is December.
+3. The failure rate is constant throughout the year at about 40 failures a month.
+4. The chance for success is greater than failure or canceling.
+
+- What can you conclude about the Outcomes based on Goals?
+1. Then general trend as goal increases is chance of success decreases. To have a channce of 50% or greater for success, goals should be $1,500 or less.
+
+- What are some limitations of this dataset?
+One huge limitation of this dataset is that the goal amounts are in different currencies. Therefore, outcomes based on goal isn't a direct apples to apples comparison among the campaigns.
+
+- What are some other possible tables and/or graphs that we could create?
+An additional Outcomes Based on Launch Date filtered on the subcategory "plays" would be helpful identifiying times of year best suited for "plays".
+
+As mentioned above, the data should also be filtered by country to remove the bias of the different currencies.
+
+Either a table or a chart showing the number of backers by goal bin could be informative. Especially given that the general trend of success decrease as goal increases, but there are outliers in the 35,000 and 40,000 bin that buck this trend. It may be useful to understand if they had single huge backers that made them successes.
