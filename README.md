@@ -7,8 +7,8 @@ This project continues the analysis after Louise's play *Fever* failed to meet i
 This analysis attempts to answer Louise's additional questions and to continue demonstrating skills in excel.
 
 The primary goals are to provide an answer to Louise's questions:
-1. When is the best type of the month to launch a successful kickstarter campaign.
-2. Which goal amounts result in in succesful kickstarter campaigns.
+1. Which is the best month to launch a successful kickstarter campaign.
+2. Which goal amounts result in the most succesful kickstarter campaigns.
 
 ## Analysis and Challenges
 
