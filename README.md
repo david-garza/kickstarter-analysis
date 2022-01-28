@@ -44,7 +44,7 @@ A challenge was encountered with COUNTIFS(). Most of the goal bins require an AN
 
 - What are some limitations of this dataset?
 
-One limitation of this dataset is that the goal amounts are in different currencies. Therefore, outcomes based on goal isn't a direct apples to apples comparison among the campaigns. The Outcome vs Goals plot should be filtered by country to compare similar currencies.
+1. One limitation of this dataset is that the goal amounts are in different currencies. Therefore, outcomes based on goal isn't a direct apples to apples comparison among the campaigns. The Outcome vs Goals plot should be filtered by country to compare similar currencies.
 
 - What are some other possible tables and/or graphs that we could create?
 
