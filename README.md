@@ -40,7 +40,7 @@ A challenge was encountered with COUNTIFS(). Most of the goal bins require an AN
 4. The chance for success is greater than failure or canceling.
 
 - What can you conclude about the Outcomes based on Goals?
-1. Then general trend as goal increases is chance of success decreases. To have a channce of 50% or greater for success, goals should be $1,500 or less.
+1. Then general trend as goal increases, is chance of success decreases. To have a chance of 50% or greater for success, goals should be $1,500 or less.
 
 - What are some limitations of this dataset?
 
