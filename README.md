@@ -19,7 +19,7 @@ Campaign outcome defined the columns and values resulting in a count of successf
 
 The plot of Theater Outcomes Based on Launch Date is provided below:
 
-![Outcomes Based on Launch Date](/resources/Theater_Outcomes_vs_Launch.png)
+![Outcomes Based on Launch Date](./resources/Theater_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 Using COUNTIFS(), the campaigns were parsed into $5,000 bin sizes and further parsed and counted by successful, failed, or canceled.
@@ -30,7 +30,7 @@ A line chart was then created using the percentages with $5,000 bins along the x
 
 The plot of Outcomes vs Goals is provided below:
 
-![Outcomes vs Goals](/resources/Outcomes_vs_Goals.png)
+![Outcomes vs Goals](./resources/Outcomes_vs_Goals.png)
 
 ### Challenges and Difficulties Encountered
 A challenge was encountered with COUNTIFS(). Most of the goal bins require an AND condition to test between two values. COUNTIFS() does not accept the excel function AND() in its criteria arguement. The only way to add boolen AND is to add the tested array again and a second criteria test. This was not obvious and allows bugs to enter the code.
